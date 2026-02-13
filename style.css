@@ -146,36 +146,46 @@ footer {
   background: #f1f5f9;
 }
 
-/* METHODOLOGY FLOW */
-.flow-container {
+/* ARCHITECTURE / METHODOLOGY FLOW */
+.architecture {
+  margin-top: 40px;
+}
+
+.row {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
   justify-content: center;
-  gap: 15px;
-  margin-top: 30px;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
 }
 
-.flow-box {
-  background: white;
-  padding: 18px 20px;
-  border-radius: 15px;
-  min-width: 180px;
+.arch-box {
+  background: #ffffff;
+  padding: 22px 26px;
+  min-width: 220px;
   text-align: center;
-  font-weight: 600;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+  border-radius: 12px;
+  font-weight: 700;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+  border-top: 5px solid #0284c7;
 }
 
-.flow-box small {
+.arch-box small {
   display: block;
-  font-weight: normal;
   margin-top: 6px;
+  font-weight: normal;
   color: #475569;
 }
 
-.flow-box.highlight {
-  background: #0284c7;
-  color: white;
+.arch-box.highlight {
+  background: #e0f2fe;
+  border-top: 5px solid #0369a1;
+}
+
+.arch-box.alert {
+  background: #fee2e2;
+  border-top: 5px solid #dc2626;
 }
 
 .arrow {
@@ -183,5 +193,6 @@ footer {
   font-weight: bold;
   color: #0284c7;
 }
+
 
 
