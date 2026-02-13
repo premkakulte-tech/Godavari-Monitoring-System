@@ -4,25 +4,38 @@
   <meta charset="UTF-8">
   <title>Godavari River Monitoring System</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" href="favicon.ico">
 </head>
 
 <body>
 
-<!-- HERO / TITLE -->
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="logo">Godavari RMS</div>
+  <ul>
+    <li><a href="#dashboard">Dashboard</a></li>
+    <li><a href="#satellite">Satellite</a></li>
+    <li><a href="#sensors">Sensors</a></li>
+    <li><a href="#thresholds">Thresholds</a></li>
+    <li><a href="#results">Results</a></li>
+    <li><a href="#about">About</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
 <header class="hero">
   <h1>
     Godavari River Monitoring System
     <span>Early Warning & Alert System</span>
   </h1>
   <p>
-    Satellite-based river encroachment assessment integrated with
-    IoT sensors for flood and hazard awareness
+    Integration of Satellite Data, Machine Learning, and IoT Sensors
+    for flood risk and river encroachment awareness
   </p>
 </header>
 
 <!-- DASHBOARD -->
-<section class="section">
+<section id="dashboard" class="section">
   <h2>Live Sensor Dashboard</h2>
 
   <div class="dashboard">
@@ -44,35 +57,77 @@
 </section>
 
 <!-- SATELLITE -->
-<section class="section light">
+<section id="satellite" class="section light">
   <h2>Satellite Data Analysis</h2>
   <p>
     Multi-temporal Landsat (2001, 2013) and SAR (2025) satellite imagery
-    were used to generate LULC maps, analyze riverbank changes,
-    and predict future encroachment hotspots using Machine Learning.
+    were used to prepare LULC maps, analyze riverbank changes,
+    and predict future encroachment hotspots using Random Forest.
   </p>
 </section>
 
+<!-- SENSOR DETAILS -->
+<section id="sensors" class="section">
+  <h2>IoT Sensor System</h2>
+  <ul>
+    <li><b>Water Level Sensor:</b> Detects rising river stages and flood risk</li>
+    <li><b>Rainfall Sensor:</b> Measures precipitation intensity</li>
+    <li><b>Vibration Sensor:</b> Identifies construction or ground disturbance near riverbanks</li>
+  </ul>
+</section>
+
+<!-- THRESHOLD TABLE -->
+<section id="thresholds" class="section light">
+  <h2>Hazard Threshold Levels</h2>
+
+  <table class="threshold-table">
+    <tr>
+      <th>Parameter</th>
+      <th>Normal Range</th>
+      <th>Alert Threshold</th>
+      <th>Risk Indication</th>
+    </tr>
+    <tr>
+      <td>Water Level</td>
+      <td>2.5 – 5.0 m</td>
+      <td>&gt; 6.0 m</td>
+      <td>Flood Risk</td>
+    </tr>
+    <tr>
+      <td>Rainfall</td>
+      <td>&lt; 40 mm/day</td>
+      <td>&gt; 40 mm/day</td>
+      <td>Flood Warning</td>
+    </tr>
+    <tr>
+      <td>Vibration</td>
+      <td>No vibration</td>
+      <td>Detected</td>
+      <td>Possible Encroachment</td>
+    </tr>
+  </table>
+</section>
+
 <!-- RESULTS -->
-<section class="section">
+<section id="results" class="section">
   <h2>Results & Alerts</h2>
   <p id="alert" class="status safe">Status: Normal</p>
 
   <p>
-    When sensor values cross defined thresholds or vibration is detected
-    near riverbanks, the system generates alerts to support early action
-    and public awareness.
+    Sensor-based alerts combined with satellite-derived hotspot maps
+    support early warning and decision-making for authorities
+    and nearby communities.
   </p>
 </section>
 
 <!-- ABOUT -->
-<section class="section light">
+<section id="about" class="section light">
   <h2>About the Project</h2>
   <p>
     This final year Civil Engineering project focuses on the Godavari River
-    stretch from Someshwar to Ramkund, Nashik. It integrates Remote Sensing,
-    GIS, SAR, Machine Learning, and IoT sensors for sustainable river
-    management and hazard mitigation.
+    stretch from Someshwar to Ramkund, Nashik. The system integrates
+    RS, GIS, SAR, Machine Learning, and IoT sensors for sustainable
+    river management and hazard mitigation.
   </p>
 </section>
 
@@ -84,4 +139,3 @@
 
 </body>
 </html>
-
