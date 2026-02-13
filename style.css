@@ -145,3 +145,43 @@ footer {
   padding: 20px;
   background: #f1f5f9;
 }
+
+/* METHODOLOGY FLOW */
+.flow-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.flow-box {
+  background: white;
+  padding: 18px 20px;
+  border-radius: 15px;
+  min-width: 180px;
+  text-align: center;
+  font-weight: 600;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+}
+
+.flow-box small {
+  display: block;
+  font-weight: normal;
+  margin-top: 6px;
+  color: #475569;
+}
+
+.flow-box.highlight {
+  background: #0284c7;
+  color: white;
+}
+
+.arrow {
+  font-size: 26px;
+  font-weight: bold;
+  color: #0284c7;
+}
+
+
