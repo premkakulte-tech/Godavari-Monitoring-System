@@ -9,7 +9,42 @@ body {
   color: #0f172a;
 }
 
-/* HERO SECTION WITH MOVING GRADIENT */
+/* NAVBAR */
+.navbar {
+  position: sticky;
+  top: 0;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.navbar .logo {
+  font-weight: bold;
+  font-size: 20px;
+  color: #0369a1;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #0369a1;
+  font-weight: 600;
+}
+
+.navbar a:hover {
+  color: #0284c7;
+}
+
+/* HERO */
 .hero {
   padding: 90px 20px;
   text-align: center;
@@ -27,20 +62,11 @@ body {
 
 .hero h1 {
   font-size: 38px;
-  margin-bottom: 10px;
 }
 
 .hero h1 span {
   display: block;
   font-size: 20px;
-  font-weight: 400;
-  opacity: 0.9;
-}
-
-.hero p {
-  font-size: 18px;
-  max-width: 850px;
-  margin: auto;
 }
 
 /* SECTIONS */
@@ -56,8 +82,6 @@ body {
 }
 
 .section h2 {
-  font-size: 28px;
-  margin-bottom: 25px;
   color: #0369a1;
 }
 
@@ -75,25 +99,35 @@ body {
   padding: 30px;
   border-radius: 20px;
   text-align: center;
-  box-shadow: 0 12px 25px rgba(0,0,0,0.12);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
 }
 
-.sensor-box:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 20px 35px rgba(0,0,0,0.18);
+/* TABLE */
+.threshold-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
 }
 
-.sensor-box h3 {
-  margin-bottom: 10px;
+.threshold-table th,
+.threshold-table td {
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.threshold-table th {
+  background: #0284c7;
+  color: white;
 }
 
 /* STATUS */
 .status {
-  font-weight: bold;
   padding: 14px 22px;
   border-radius: 14px;
-  display: inline-block;
+  font-weight: bold;
 }
 
 .safe {
@@ -106,10 +140,8 @@ body {
   color: #991b1b;
 }
 
-/* FOOTER */
 footer {
-  background: #f1f5f9;
   text-align: center;
   padding: 20px;
-  font-size: 14px;
+  background: #f1f5f9;
 }
