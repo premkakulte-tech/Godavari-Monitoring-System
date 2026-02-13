@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Godavari River Monitoring System</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+
+<!-- HERO / TITLE -->
+<header class="hero">
+  <h1>
+    Godavari River Monitoring System
+    <span>Early Warning & Alert System</span>
+  </h1>
+  <p>
+    Satellite-based river encroachment assessment integrated with
+    IoT sensors for flood and hazard awareness
+  </p>
+</header>
+
+<!-- DASHBOARD -->
+<section class="section">
+  <h2>Live Sensor Dashboard</h2>
+
+  <div class="dashboard">
+    <div class="sensor-box">
+      <h3>🌊 Water Level</h3>
+      <p><span id="water">--</span> m</p>
+    </div>
+
+    <div class="sensor-box">
+      <h3>🌧 Rainfall</h3>
+      <p><span id="rain">--</span> mm/day</p>
+    </div>
+
+    <div class="sensor-box">
+      <h3>📳 Vibration</h3>
+      <p><span id="vibration">--</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- SATELLITE -->
+<section class="section light">
+  <h2>Satellite Data Analysis</h2>
+  <p>
+    Multi-temporal Landsat (2001, 2013) and SAR (2025) satellite imagery
+    were used to generate LULC maps, analyze riverbank changes,
+    and predict future encroachment hotspots using Machine Learning.
+  </p>
+</section>
+
+<!-- RESULTS -->
+<section class="section">
+  <h2>Results & Alerts</h2>
+  <p id="alert" class="status safe">Status: Normal</p>
+
+  <p>
+    When sensor values cross defined thresholds or vibration is detected
+    near riverbanks, the system generates alerts to support early action
+    and public awareness.
+  </p>
+</section>
+
+<!-- ABOUT -->
+<section class="section light">
+  <h2>About the Project</h2>
+  <p>
+    This final year Civil Engineering project focuses on the Godavari River
+    stretch from Someshwar to Ramkund, Nashik. It integrates Remote Sensing,
+    GIS, SAR, Machine Learning, and IoT sensors for sustainable river
+    management and hazard mitigation.
+  </p>
+</section>
+
+<footer>
+  <p>Final Year Project | Civil Engineering | SPPU</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
